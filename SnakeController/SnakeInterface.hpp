@@ -70,7 +70,7 @@ struct ScoreInd
 
 struct LooseInd
 {
-    static constexpr std::uint32_t MESSAGE_ID = 0x71;
+    static constexpr  std::uint32_t MESSAGE_ID = 0x71;
 };
 
 struct PauseInd
