@@ -37,6 +37,7 @@ private:
     void handleDirectionChange(const DirectionInd&);
     void handleFoodPositionChange(const FoodInd& receivedFood);
     void handleNewFood(const FoodResp& requestedFood);
+    void handlePause(const PauseInd&);
 
     struct Segment
     {
@@ -66,6 +67,8 @@ private:
 
     Direction m_currentDirection;
     std::list<Segment> m_segments;
+
+     bool m_is_pasued;
 };
 
 } // namespace Snake
